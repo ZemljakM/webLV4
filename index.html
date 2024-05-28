@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Web Shop</h1>
+      <div class = "navbar-right">
+        <div class="cart-container">
+          <button class="cart-button">Cart <span class="cart-badge">0</span></button>
+        </div>
+        <a href="logout.php" id="logout-button" class="logout-button" style="display: none;">Logout</a>
+      </div>
+      
+    </div>
+
+    <h2 class="success-message" style="display: none;">Successful shopping!</h2>
+    
+    <h2 class="h2-title">Latest product</h2>
+    <div class="latest-product">
+    </div>
+
+    <h2 class="h2-title">All products</h2>
+    <div class="items-grid">
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Cart</h2>
+        <ul class="cart-items"></ul>
+        <p>Total: <span class="cart-total">$0.00</span></p>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
